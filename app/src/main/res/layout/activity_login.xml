@@ -4,27 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#A36666"
+    android:backgroundTint="#6D9495"
+    android:foregroundTint="#CAA2A2"
     android:orientation="vertical"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingEnd="30dp"
+        app:srcCompat="@drawable/nux_dayone_landing_logo" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#A36666"
         android:ems="10"
-        android:hint="username" />
+        android:fontFamily="monospace"
+        android:foregroundGravity="fill"
+        android:foregroundTint="#CFA9A9"
+        android:hint="username"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#A36666"
         android:ems="10"
+        android:fontFamily="monospace"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:backgroundTint="#E49090"
+        android:fontFamily="monospace"
+        android:foregroundTint="#DC6969"
+        android:text="Login"
+        android:textColor="#3E0606"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E49090"
+        android:fontFamily="monospace"
+        android:text="Sign Up"
+        android:textColor="#3E0606"
+        android:textStyle="bold" />
 </LinearLayout>

@@ -14,12 +14,17 @@ public class ParseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        /*
         Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         builder.networkInterceptors().add(httpLoggingInterceptor);
+        */
+
+        // Register your parse models
+        ParseObject.registerSubclass(Post.class);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("SPCuR1AuHye9Uax3Hz4Uf7hb5VjBzICJjVUty2rA")
